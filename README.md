@@ -32,7 +32,7 @@ Este é um aplicativo simples de previsão do tempo desenvolvido em HTML, CSS e 
 Este aplicativo é apenas um exemplo educacional e não foi implementado com recursos de segurança ou tratamento de erros robustos. Ele não é recomendado para uso em produção sem uma revisão apropriada.
 
 Autor
-Este aplicativo foi desenvolvido por [Seu Nome/Apelido]. Sinta-se à vontade para entrar em contato comigo caso tenha alguma dúvida ou feedback!
+Este aplicativo foi desenvolvido pelo Canal ASMR Programming e modificado por mim do meu modo. Sinta-se à vontade para alterações.
 
 Aviso: As informações climáticas fornecidas por este aplicativo são baseadas na API do OpenWeatherMap e podem não estar totalmente atualizadas ou precisas em tempo real. Certifique-se de verificar fontes confiáveis para obter informações meteorológicas críticas.
 
