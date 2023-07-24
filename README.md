@@ -2,6 +2,14 @@
 
 Este é um aplicativo simples de previsão do tempo desenvolvido em HTML, CSS e JavaScript. Ele permite que os usuários obtenham informações climáticas em tempo real para uma determinada localização.
 
+# Screenshot
+
+Fotos do Projeto :
+
+![screenshot](modelo1.jpg)
+
+![screenshot](modelo2.jpg)
+
 ## Como funciona?
 
 1. **Digite Sua Localização:** Insira o nome da cidade ou localização para a qual deseja obter a previsão do tempo na caixa de pesquisa.
