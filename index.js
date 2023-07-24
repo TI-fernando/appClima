@@ -1,9 +1,11 @@
+// Este trecho altera a pagina dinamicamente conforme a API da openweathermap, fornecendo informações climaticas em tempo real.
 const container = document.querySelector(".container");
 const search = document.querySelector(".search-box button");
 const weatherBox = document.querySelector(".weather-box");
 const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 
+// Aqui neste trecho de codigo, e uma função search, onde básicamente vai pegar os dados fornecidos pela API e exibir a informação ao usuario.
 search.addEventListener("click", () => {
 
   const APIKey = "Sua Chave Aqui"; // Para o app funcionar, você deve criar sua chave personalizada no site - ' https://openweathermap.org ' e colar. 
@@ -16,7 +18,7 @@ search.addEventListener("click", () => {
 
     .then((response) => response.json())
     .then((json) => {
-      
+
       if (json.cod === "404") {
         container.style.height = "400px";
         weatherBox.style.display = "none";
@@ -26,15 +28,18 @@ search.addEventListener("click", () => {
         return;
       }
 
+      // Caso a pesquisa seja alguma informação invalida, o app exibira uma imagem de erro.
       error404.style.display = "none";
       error404.classList.remove("fadeIn");
 
+      // Função responsavel em exibir os dados do app, como imagens, velocidade do ar, humidade.
       const image = document.querySelector(".weather-box img");
       const temperature = document.querySelector(".weather-box .temperature");
       const description = document.querySelector(".weather-box .description");
       const humidity = document.querySelector(".weather-details .humidity span");
       const wind = document.querySelector(".weather-details .wind span");
 
+      // Aqui fara uma sequencia de casos, onde cada uma delas e um clima diferente..
       switch (json.weather[0].main) {
         case "Clear":
           image.src = "images/clear.png";
