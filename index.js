@@ -8,7 +8,7 @@ const error404 = document.querySelector(".not-found");
 // Aqui neste trecho de codigo, e uma função search, onde básicamente vai pegar os dados fornecidos pela API e exibir a informação ao usuario.
 search.addEventListener("click", () => {
 
-  const APIKey = "Sua Chave Aqui"; // Para o app funcionar, voê deve criar sua chave personalizada no site - ' https://openweathermap.org ' e colar. 
+  const APIKey = "970f2c4f3e47511a05dc99ff0280b2cd"; // Para o app funcionar, voê deve criar sua chave personalizada no site - ' https://openweathermap.org ' e colar. 
   const city = document.querySelector(".search-box input").value;
 
   if (city === "")
